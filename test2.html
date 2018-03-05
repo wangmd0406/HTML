@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		
+		.div2{
+			margin-top: 100px;
+			width: 200px;
+			height: 300px;
+			background-color: aquamarine;
+			position: relative;
+		}
+		.div1{
+			cursor: pointer;
+			width: 100px;
+			height: 100px;
+			border-radius: 40px 0;
+			background-color: aqua;
+			transition: all 0.5s;
+			position: absolute;
+			margin-top: -50px;
+			left: 25%;
+			top: 0;
+		}
+		.div2:hover .div1{
+			border-radius: 500px;
+		}
+		.div2_1{
+			position: absolute;
+			width: 200px;
+			height: 0;
+			background-color: aqua;
+			left: 0;
+			bottom: 0;
+			transition: all .3s;
+		}
+		.div2:hover .div2_1{
+			height: 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="div2">
+		<div class="div1"></div>
+		<div class="div2_1"></div>
+	</div>
+</body>
+</html>

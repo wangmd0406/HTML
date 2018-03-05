@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		.div1{
+			width: 30%;
+			height: 50px;
+			border: 1px solid red;
+			margin: 200px auto;
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+		}
+		span{
+			height: 100%;
+			width: 0;
+			background-color: rgba(67,67,67,1.00);
+			left: 0;
+			position: absolute;
+			transition: all 3s;
+		}
+		.div1:hover span{
+			width: 100%;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div class="div1"><span></span></div>
+	<div class="div1"><span></span></div>
+	<div class="div1"><span></span></div>
+<!-- 
+	<script>
+		var home=document.getElementById("home");
+		var con=document.getElementById("con");
+		home.onmouseover=function(){
+			con.style.display="bolck";
+		}
+		home.onmouseout=function(){
+			con.style.display="none";
+		}
+		home.onclick=function(){
+			con.style.display="block";
+		}
+		function hover(){
+			con.style.display="block";
+		}
+
+	</script>
+-->
+</body>
+</html>

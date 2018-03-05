@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<style>
+		*{
+			
+		}
+		.div1{
+			width: 270px;
+			height: 129px;
+			background: url(img/Unknown.png) repeat-x;
+			border: 1px solid red;
+			background-position: -270px center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="div1" id="div1"></div>
+	<script>
+		var div1=document.getElementById("div1");
+		var i=0;
+		function time(){
+			i=i-270;
+			div1.style.backgroundPositionX=i+"px";
+			if(i<=-99999){
+				i=0;
+			}
+		}
+		setInterval(time,100)
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>test</title>
+</head>
+<body>
+<img src="img/113313hbbbrf3fqw3qzbxp.jpg" width="320" heigt="1800"/>
+<script>
+var myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images\113313hbbbrf3fqw3qzbxp.jpg') {
+      myImage.setAttribute ('src','images\113313hbbbrf3fqw3qzbxp.jpg');
+    } else {
+      myImage.setAttribute ('src','images/183112anbjkpc4bujx4up4.jpg');
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>自适应图片</title>
+	</head>
+	<body>
+		<div id="div1">
+			<h3>自适应图片</h3>
+			<img srcset="img/girl1.jpg 320w,img/girl2.jpg 480w,
+             img/girl3.jpg 800w" sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px" src="img/12.jpg" alt="tupian" />
+		</div>
+		<div id="div2">
+			<img srcset="img/girl1.jpg,img/girl2.jpg 1.5x,img/girl3.jpg 2x"
+     src="img/girl1.jpg" alt="Elva dressed as a fairy">
+		</div>
+	</body>
+</html>

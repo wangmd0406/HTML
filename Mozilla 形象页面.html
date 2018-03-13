@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Mozilla splash page</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
     <style>
       /* header and body setup */
 
@@ -102,13 +102,13 @@
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-
+		<img src="img/firefox_logo-only_RGB_120px.png" alt="">
     </header>
 
     <main>
       <article>
         <!-- insert iframe from youtube -->
-
+		  <iframe frameborder="0" width="400" height="200" src="https://v.qq.com/iframe/player.html?vid=c0026mmxwzh&tiny=0&auto=0" allowfullscreen></iframe>
         <h2>Rocking the free web</h2>
 
         <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
@@ -118,23 +118,39 @@
 
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
+		  
+		  <!--sizes:(max-width:480px)当视窗的宽度是480像素或更少,srcset:定义一个图像集-->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img srcset="img/firefox_logo-only_RGB_120px.png 120w,
+					   img/firefox_logo-only_RGB_400px.png 400w" 
+			   sizes="(max-width:480px) 120px,400px"
+			   src="img/firefox_logo-only_RGB_400px.png" alt="">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img srcset="img/mozilla-dinosaur-head _120px.png 120w,
+					   img/mozilla-dinosaur-head _400px.png 400w"
+			   sizes="(max-width:480px) 120px,400px"
+			   src="img/mozilla-dinosaur-head _400px.png" alt="">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img srcset="img/firefox-addons_120px.png 120w,
+					   img/firefox-addons_400px.png 400w"
+			   sizes="(max-width:480px) 120px,400px"
+			   src="img/firefox-addons_400px.png" alt="">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img src="img/mdn.svg" alt="">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+		  <picture>
+		  	<source media="(max-width:599px)" srcset="img/red-panda_600px.jpg">
+			<source media="(min-width:600px)" srcset="img/red-panda_1200px.jpg">
+			<img src="img/red-panda_1200px.jpg" alt="">
+		  </picture>
       </div>
 
     </main>

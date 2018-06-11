@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+		<title>高科技测智商</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.con{
+				height: 100%;
+				width: 100%;
+				text-align: center;
+			}
+			.main{
+				text-align: center;
+				color: aquamarine;
+			}
+			.tit{
+				font-size: 20px;
+			}
+			.tit2{
+				font-size: 14px;
+			}
+			.button{
+				display: block;
+				text-decoration: none;
+				height: 35px;
+				width: 150px;
+				text-align: center;
+				background-color: #7FFFD4;
+				line-height: 35px;
+				margin: 0 auto;
+			}
+			#txt{
+				height: 35px;
+				border-color: #7FFFD4;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="con">
+			<div class="main">
+				<br />
+			<span class="tit">看看你十年后的智商什么样</span>
+			<br />
+			<span class="tit2" style="text-align: left; color: #535353;">已有<span style="color: #A60000;">9999293</span>人参与测试</span>
+		</div>
+		<br />
+		<br />
+		<br />
+		<label for="txt">输入你的姓名开始测试：</label>
+		<br />
+		<input type="text" id="txt" placeholder="例如：张三" />
+		<br />
+		<br />
+		<a href="javascript:;" class="button" onclick="query()">开始测试</a>
+		</div>
+		<script type="text/javascript">
+			
+			function query(){
+				var name = document.getElementById('txt').value;
+				console.log(name);
+				if(name === '许欢' ){
+					alert('你好'+name+',你智商为0.0001，比傻子略聪明！');
+				}
+				else if(name === '王明登'){
+					alert('你好'+name+',你智商为999，是登爷爷！');
+				}
+				else if(name === ''){
+					alert('请输入姓名！')
+				}
+				else{
+					alert('你叫'+name+'???逗我。再来一次吧')
+				}
+			}
+		</script>
+	</body>
+</html>
